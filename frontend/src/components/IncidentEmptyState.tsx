@@ -1,0 +1,3 @@
+export function IncidentEmptyState({ onStart, loading }: { onStart: () => void; loading: boolean }) {
+  return <section className="empty-state"><div className="empty-mark" aria-hidden="true">RA</div><p className="eyebrow">Roadside Assistant</p><h2>Get to a safer next step.</h2><p>Describe what happened and receive concise guidance based on your reported symptoms.</p><p className="safety-reminder"><strong>First:</strong> move away from traffic or other immediate danger if you can do so safely.</p><button className="button button-primary" type="button" onClick={onStart} disabled={loading}>My vehicle has broken down <span aria-hidden="true">&rarr;</span></button></section>;
+}
